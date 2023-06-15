@@ -17,7 +17,7 @@ public class DeathTracker : MonoBehaviour
     private void OnEnable() 
     {
         // Subscribe to the onDeath event when the object is enabled
-        Competitor.onDeath +=  CountDeath;
+        FindObjectOfType<PlayerCompetitor>().onDeath += CountDeath;
     }
 
     

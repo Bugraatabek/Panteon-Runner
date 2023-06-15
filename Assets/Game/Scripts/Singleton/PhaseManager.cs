@@ -18,14 +18,6 @@ public class PhaseManager : MonoBehaviour
         StartCoroutine(WaitAndStartRace());   // Start the race coroutine
     }
 
-    private void EndGame()
-    {
-        if (onGameFinished != null)
-        {
-            onGameFinished();   // Trigger the onGameFinished event
-        }
-    }
-
     private IEnumerator WaitAndStartRace()
     {
         while (true)
@@ -59,4 +51,13 @@ public class PhaseManager : MonoBehaviour
             onRunnerPhaseStart();   // Trigger the onRunnerPhaseStart event
         }
     }
+
+    private void EndGame()
+    {
+        if (onGameFinished != null)
+        {
+            onGameFinished();   // Trigger the onGameFinished event
+        }
+    }
+
 }

@@ -49,7 +49,7 @@ public class RankTracker : MonoBehaviour
         {
             if (competitorPositions[i] == playerTransform.position.z)
             {
-                _playersRank = (10 - i);   // Calculate the player's rank based on their position
+                _playersRank = (competitorPositions.Count - i);   // Calculate the player's rank based on their position
             }
         }
     }

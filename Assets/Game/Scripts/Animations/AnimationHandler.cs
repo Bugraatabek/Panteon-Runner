@@ -20,7 +20,6 @@ namespace Runner.Anim
         {
             if(playerController != null)
             {
-                Debug.Log("Subscribing to playerController");
                 // Subscribe to the onMoving event in the PlayerController
                 playerController.onStopMoving += IdleAnimation;
                 // Subscribe to the onMoving event in the PlayerController

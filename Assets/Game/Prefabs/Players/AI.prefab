@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 913861756147977686}
   - component: {fileID: 5154177337971443801}
   - component: {fileID: 4033837803831453691}
-  - component: {fileID: 1672995707529966478}
   - component: {fileID: 648399958}
   - component: {fileID: 134462263144889915}
   - component: {fileID: 735826049702216379}
+  - component: {fileID: 2669578948315621330}
   m_Layer: 0
   m_Name: AI
   m_TagString: Player
@@ -90,19 +90,6 @@ CapsuleCollider:
   m_Height: 2.36
   m_Direction: 1
   m_Center: {x: 0, y: 1.19, z: 0}
---- !u!114 &1672995707529966478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838156144946597142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386b4d553f1c3894a990f1be0d17042c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _restartPoint: {fileID: 0}
 --- !u!114 &648399958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbae674481d1330448872bbb842fda5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
 --- !u!195 &134462263144889915
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -151,7 +139,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPrefab: {fileID: 0}
   _shouldRun: 0
-  _steerSpeed: 17
+  _randomSteeringSpeedFloor: 17
+  _randomSteeringSpeedCeiling: 17.5
+  waypointTolerance: 1
+  path: {fileID: 0}
+--- !u!114 &2669578948315621330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838156144946597142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3795b50264acdfa42aa5295ea2c1e9ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _restartPoint: {fileID: 0}
 --- !u!1001 &309494794559676762
 PrefabInstance:
   m_ObjectHideFlags: 0

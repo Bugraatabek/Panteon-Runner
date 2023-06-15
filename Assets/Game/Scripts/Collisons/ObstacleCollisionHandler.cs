@@ -30,7 +30,7 @@ namespace Runner.Collisions
                 if (this.CompareTag("SpecialObstacle"))
                 {
                     iSpecialObstacle.OnCollision(competitorRB, new Vector3()); // Call the OnCollision method on the ISpecialObstacle component with a default contact point because onTriggerEnter doesn't provide a contact point.
-                    return;
+                    return; // Get out early.
                 }
 
                 if (iSpecialObstacle != null)
