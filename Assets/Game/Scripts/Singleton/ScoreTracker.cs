@@ -15,14 +15,9 @@ public class ScoreTracker : MonoBehaviour
         _score = 0;   // Initialize the score to 0
     }
 
-    private void OnEnable()
+    public void IncreaseScore(int amount)
     {
-        CoinCollisionHandler.onCoinCollect += OnCoinCollect;   // Subscribe to the onCoinCollect event
-    }
-
-    private void OnCoinCollect()
-    {
-        _score += 5;   // Increase the score by 5 when a coin is collected
+        _score += amount;   // Increase the score by the amount when a coin is collected
         if (onScoreChange != null)
         {
             onScoreChange();   // Invoke the onScoreChange event

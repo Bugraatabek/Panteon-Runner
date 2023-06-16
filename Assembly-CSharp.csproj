@@ -39,6 +39,7 @@
      <Compile Include="Assets\Game\Scripts\Singleton\Fader.cs" />
      <Compile Include="Assets\Game\Scripts\Singleton\Singleton.cs" />
      <Compile Include="Assets\Game\Scripts\Interfaces\IPaintable.cs" />
+     <Compile Include="Assets\Game\Scripts\Control\AICompetitor.cs" />
      <Compile Include="Assets\Game\Scripts\Control\Competitor.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
@@ -56,10 +57,12 @@
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Game\Scripts\Animations\Dotween\ShiningObstacleAnimation.cs" />
      <Compile Include="Assets\Game\Scripts\Control\Path\Path.cs" />
+     <Compile Include="Assets\Game\Scripts\Animations\AIAnimationHandler.cs" />
      <Compile Include="Assets\Game\Scripts\Animations\Dotween\HalfDonutAnimation.cs" />
      <Compile Include="Assets\Game\Scripts\Interfaces\IAIController.cs" />
      <Compile Include="Assets\Game\Scripts\Singleton\AudioPlayer.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Game\Scripts\Animations\PlayerAnimationHandler.cs" />
      <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
      <Compile Include="Assets\Game\Scripts\UI\EndGameManager.cs" />
      <Compile Include="Assets\Game\Scripts\Obstacles\RotatorObstacle.cs" />
@@ -77,13 +80,12 @@
      <Compile Include="Assets\Game\Scripts\Control\AIController.cs" />
      <Compile Include="Assets\Game\Scripts\Interfaces\ISpecialObstacle.cs" />
      <Compile Include="Assets\Game\Scripts\Animations\Dotween\RotatingStickAnimation.cs" />
+     <Compile Include="Assets\Game\Scripts\Control\PlayerCompetitor.cs" />
      <Compile Include="Assets\Game\Scripts\Collisons\CoinCollisionHandler.cs" />
      <Compile Include="Assets\Game\Scripts\UI\UICoin.cs" />
      <Compile Include="Assets\Game\Scripts\Singleton\RankTracker.cs" />
      <Compile Include="Assets\Game\Scripts\Singleton\PaintPercentageTracker.cs" />
      <Compile Include="Assets\Game\Scripts\Interfaces\ISpecialObstacleRoutine.cs" />
-     <Compile Include="Assets\Game\Scripts\Control\PlayerCompetitor.cs" />
-     <Compile Include="Assets\Game\Scripts\Control\AICompetitor.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

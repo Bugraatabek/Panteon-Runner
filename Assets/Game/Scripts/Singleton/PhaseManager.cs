@@ -12,9 +12,6 @@ public class PhaseManager : MonoBehaviour
 
     private void Start()
     {
-        // Subscribe to the onGameFinished event of the PaintPercentageTracker
-        Singleton.Instance.PaintPercentageTracker.onGameFinished += EndGame;
-
         StartCoroutine(WaitAndStartRace());   // Start the race coroutine
     }
 
@@ -52,7 +49,7 @@ public class PhaseManager : MonoBehaviour
         }
     }
 
-    private void EndGame()
+    public void EndGame()
     {
         if (onGameFinished != null)
         {

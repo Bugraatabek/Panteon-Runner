@@ -5856,27 +5856,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4900104784768509043, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 3.444451
+      value: 3.488593
       objectReference: {fileID: 0}
     - target: {fileID: 4900104784768509043, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -2.777943
+      value: -2.753438
       objectReference: {fileID: 0}
     - target: {fileID: 4900104785823067063, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 3.444451
+      value: 3.488593
       objectReference: {fileID: 0}
     - target: {fileID: 4900104785823067063, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -2.777943
+      value: -2.753438
       objectReference: {fileID: 0}
     - target: {fileID: 4900104785914247758, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.y
-      value: 3.444451
+      value: 3.488593
       objectReference: {fileID: 0}
     - target: {fileID: 4900104785914247758, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -2.777943
+      value: -2.753438
       objectReference: {fileID: 0}
     - target: {fileID: 5034215006231088541, guid: c989ebbd46c9890469a8a5abcf795f39, type: 3}
       propertyPath: m_Colors.m_NormalColor.b

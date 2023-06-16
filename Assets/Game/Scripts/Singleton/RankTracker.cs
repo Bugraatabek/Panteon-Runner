@@ -17,7 +17,7 @@ public class RankTracker : MonoBehaviour
 
     void Start()
     {
-        playerTransform = FindObjectOfType<PlayerController>().transform;
+        playerTransform = FindObjectOfType<PlayerCompetitor>().transform;
 
         // Find all Competitor objects in the scene and add them to the competitors list
         foreach (var competitor in FindObjectsOfType<Competitor>())

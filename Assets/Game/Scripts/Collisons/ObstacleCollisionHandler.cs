@@ -27,7 +27,7 @@ namespace Runner.Collisions
             Rigidbody competitorRB = other.gameObject.GetComponent<Rigidbody>();
             if (other.CompareTag("Player") || other.CompareTag("AI"))
             {
-                if (this.CompareTag("SpecialObstacle"))
+                if (this.CompareTag("HarmlessObstacle"))
                 {
                     iSpecialObstacle.OnCollision(competitorRB, new Vector3()); // Call the OnCollision method on the ISpecialObstacle component with a default contact point because onTriggerEnter doesn't provide a contact point.
                     return; // Get out early.
@@ -56,7 +56,7 @@ namespace Runner.Collisions
             if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("AI"))
             {
                 Vector3 contactPoint = other.GetContact(0).normal; // Get the contact point normal of the collision
-                if (this.tag == "SpecialObstacle" && iSpecialObstacle != null)
+                if (this.CompareTag("HarmlessObstacle"))
                 {
                     iSpecialObstacle.OnCollision(competitorRB, contactPoint); // Call the OnCollision method on the ISpecialObstacle component with the contact point
                     return;

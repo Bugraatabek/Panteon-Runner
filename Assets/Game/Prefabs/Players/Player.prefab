@@ -803,9 +803,9 @@ GameObject:
   - component: {fileID: 4033837803831453691}
   - component: {fileID: -1715014521661143608}
   - component: {fileID: 103838893}
-  - component: {fileID: 648399958}
   - component: {fileID: 134462263144889915}
   - component: {fileID: 4760791407641023699}
+  - component: {fileID: 7570921655527748534}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -917,19 +917,6 @@ MonoBehaviour:
   _brushSize: 0
   _paintingPhase: 0
   _mainSlider: {fileID: 0}
---- !u!114 &648399958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838156144946597142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbae674481d1330448872bbb842fda5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
 --- !u!195 &134462263144889915
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -964,9 +951,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f613a157caaeee44816b018c8e4272b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathSound: {fileID: 0}
   _restartPoint: {fileID: 0}
   onDeathSound: {fileID: 0}
+--- !u!114 &7570921655527748534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838156144946597142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0194991236c790443be6a5d8503983d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: -1715014521661143608}
 --- !u!1 &7495071955331314842
 GameObject:
   m_ObjectHideFlags: 0
